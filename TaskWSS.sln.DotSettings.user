@@ -1,0 +1,18 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7d178f7e_002D104a_002D4b3b_002Dabb1_002D463d5605ea90/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="IsCompanyExistAsync_ShouldReturnTrue" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::C7D2B366-444A-4C6E-BD42-0C2624738421::net8.0::TaskWSS.Tests.Services.CompanyServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::C7D2B366-444A-4C6E-BD42-0C2624738421::net8.0::TaskWSS.Tests.Services.DepartmentServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::C7D2B366-444A-4C6E-BD42-0C2624738421::net8.0::TaskWSS.Tests.Services.UnitDepartmentServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=eed0184d_002D583b_002D426b_002D8e18_002D07622ea0ac40/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CompanyServiceTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::C7D2B366-444A-4C6E-BD42-0C2624738421::net8.0::TaskWSS.Tests.Services.CompanyServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f64dc614_002Db357_002D4aca_002Dbe31_002D32d2d6fda3df/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CompanyServiceTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::C7D2B366-444A-4C6E-BD42-0C2624738421::net8.0::TaskWSS.Tests.Services.CompanyServiceTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
