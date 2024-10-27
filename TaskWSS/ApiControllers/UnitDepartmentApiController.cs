@@ -25,6 +25,11 @@ public class UnitDepartmentApiController: ControllerBase
         _mapper = mapper;
     }
     
+    /// <summary>
+    /// Api метод для получения всех отделов
+    /// </summary>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpGet("unit-departments")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -44,6 +49,12 @@ public class UnitDepartmentApiController: ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для получения отдела по ID
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpGet("unit-department/{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -66,6 +77,12 @@ public class UnitDepartmentApiController: ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для получения всех отделов по ID департамента
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpGet("unit-departments-by-department/{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -88,6 +105,12 @@ public class UnitDepartmentApiController: ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для создания нового отдела
+    /// </summary>
+    /// <param name="request"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpPost("unit-department")]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -108,6 +131,13 @@ public class UnitDepartmentApiController: ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для обновления отдела
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="request"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpPut("unit-department/{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -129,6 +159,12 @@ public class UnitDepartmentApiController: ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для удаления отдела
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpDelete("unit-department/{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]

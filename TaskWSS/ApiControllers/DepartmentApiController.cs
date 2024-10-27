@@ -25,6 +25,11 @@ public class DepartmentApiController : ControllerBase
         _mapper = mapper;
     }
     
+    /// <summary>
+    /// Api метод для получения всех департаментов
+    /// </summary>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpGet("departments")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -44,6 +49,12 @@ public class DepartmentApiController : ControllerBase
        
     }
     
+    /// <summary>
+    /// Api метод для получения департамента по ID
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpGet("department/{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -65,6 +76,12 @@ public class DepartmentApiController : ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для получения всех департаментов по ID компании
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpGet("departments-by-company/{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -86,6 +103,12 @@ public class DepartmentApiController : ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для создания нового департамента
+    /// </summary>
+    /// <param name="departmentViewModel"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpPost("department")]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -105,6 +128,13 @@ public class DepartmentApiController : ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для обновления департамента
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="departmentViewModel"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpPut("department/{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -125,6 +155,12 @@ public class DepartmentApiController : ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для удаления департамента
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpDelete("department/{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]

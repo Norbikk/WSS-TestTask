@@ -31,6 +31,11 @@ public class CompanyApiController : ControllerBase
         _companyExportService = companyExportService;
     }
     
+    /// <summary>
+    /// Api метод для получения всех компаний
+    /// </summary>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpGet("companies")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -52,6 +57,12 @@ public class CompanyApiController : ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для получения определенной компании
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpGet("company/{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -74,6 +85,12 @@ public class CompanyApiController : ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для создания новой компании
+    /// </summary>
+    /// <param name="companyRequest"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpPost("company")]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -92,6 +109,13 @@ public class CompanyApiController : ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для обновления компании
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="companyRequest"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpPut("company/{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -113,6 +137,12 @@ public class CompanyApiController : ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для удаления компании
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpDelete("company/{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -134,6 +164,12 @@ public class CompanyApiController : ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для импорта компаний из XML
+    /// </summary>
+    /// <param name="file"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpPost("company/import")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -152,6 +188,11 @@ public class CompanyApiController : ControllerBase
         }
     }
     
+    /// <summary>
+    /// Api метод для экспорта компаний в XML
+    /// </summary>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
     [HttpGet("company/export")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
